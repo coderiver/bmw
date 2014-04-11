@@ -42,8 +42,103 @@
 	
 body
 	font-size: 12px 
-	font-family: Arial, sans-serif 
+	font-family: arial,helvetica,sans-serif
 	line-height: 1.4
+.out
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -25px
+.push
+	height: 25px
+// common blocks
 
+// header
+.header      
+	padding-top: 14px
+.header__inner
+	height: 60px
+	padding: 0 30px 
+	background: #898989
+.mainmenu
+	display: inline-block
+	height: 27px
+	padding-bottom: 4px 
+	ul
+		+clr
+		li
+			float: left
+			margin-right: 5px
+			&:first-child
+				a
+					color: #000077
+.mainmenu__link
+	display: block
+	margin: 13px 5px 0px 0px
+	color: #fff
+	text-decoration: none
+	font-size: 14px
+	&:hover
+		color: #000077
+	&.showroom
+		font-size: 17px
+		font-weight: bold
+		margin: 9px 5px 0px 5px
+.mainmenu__dropdown
+	display: none
 
-// common blocks      
+.submenu
+	ul
+		width: 755px
+		border-top: 1px solid #aaa 
+		+clr
+		li
+			float: left
+			&:first-child
+				a
+					padding: 0 8px 0 0 
+			a
+				display: inline-block
+				height: 22px
+				line-height: 22px
+				padding: 0 8px 
+				font-size: 11px
+				text-decoration: none
+				color: #fff
+				&:hover
+					color: #000077
+
+// footer
+.footer
+	height: 25px
+	+box
+	border-top: 1px solid #999999					
+.footer__inner
+	+clr
+	width: 1024px
+.footer__menu
+	float: right
+	margin-right: 52px
+	ul
+		+clr
+		padding-top: 4px
+		li
+			float: left
+			margin-left: 10px
+			a
+				position: relative
+				display: inline-block
+				padding-left: 10px 
+				color: #4c4c4c
+				font-size: 11px
+				text-decoration: none
+				&:before
+					content: ""
+					position: absolute
+					top: 4px
+					left: 0px
+					+arr(3, 6, #4c4c4c, r)
+				&:hover
+					color: #003399	
+					&:before
+						+arr(3, 6, #003399, r)
