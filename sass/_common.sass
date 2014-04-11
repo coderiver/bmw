@@ -56,10 +56,26 @@ body
 // header
 .header      
 	padding-top: 14px
+	margin-bottom: -22px
+	+box-shadow(0 0 7px #313030)
 .header__inner
 	height: 60px
 	padding: 0 30px 
 	background: #898989
+.header__bottom
+	height: 22px
+	+opacity(.9)
+.droplist
+	display: block
+	padding: 4px 0px 0px 30px
+	border: 1px solid #999
+	border-top: none
+	border-left: none
+	height: 18px
+	font-size: 11px
+	width: 191px
+	color: #000
+	text-decoration: none
 .mainmenu
 	display: inline-block
 	height: 27px
@@ -67,8 +83,8 @@ body
 	ul
 		+clr
 		li
+			position: relative
 			float: left
-			margin-right: 5px
 			&:first-child
 				a
 					color: #000077
@@ -83,10 +99,31 @@ body
 	&.showroom
 		font-size: 17px
 		font-weight: bold
-		margin: 9px 5px 0px 5px
+		padding: 0 7px 
+		margin: 9px 0px 0px 0px
+	&.is-active
+		background: #fff
+		color: #000077 	
 .mainmenu__dropdown
-	display: none
-
+	position: absolute
+	top: 100%
+	left: -1px
+	width: 198px
+	+box
+	padding: 8px 
+	border: 1px solid #999999
+	border-top: none 
+	background: #fff
+	z-index: 999
+	a
+		text-decoration: none
+		font-size: 11px
+		color: #4c4c4c!important
+	ul
+		margin-bottom: 10px 	  
+	& > li > a
+		color: #000!important
+		font-weight: bold	
 .submenu
 	ul
 		width: 755px
@@ -107,6 +144,13 @@ body
 				color: #fff
 				&:hover
 					color: #000077
+.disrt
+	position: absolute
+	left: 791px
+	top: 0px
+	width: 187px
+	height: 95px
+	z-index: 899
 
 // footer
 .footer

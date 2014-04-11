@@ -25,21 +25,29 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 
 .push { height: 25px; }
 
-.header { padding-top: 14px; }
+.header { padding-top: 14px; margin-bottom: -22px; -webkit-box-shadow: 0 0 7px #313030; -moz-box-shadow: 0 0 7px #313030; box-shadow: 0 0 7px #313030; }
 
 .header__inner { height: 60px; padding: 0 30px; background: #898989; }
+
+.header__bottom { height: 22px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; }
+
+.droplist { display: block; padding: 4px 0px 0px 30px; border: 1px solid #999999; border-top: none; border-left: none; height: 18px; font-size: 11px; width: 191px; color: black; text-decoration: none; }
 
 .mainmenu { display: inline-block; height: 27px; padding-bottom: 4px; }
 .mainmenu ul { *zoom: 1; }
 .mainmenu ul:after { content: " "; display: table; clear: both; }
-.mainmenu ul li { float: left; margin-right: 5px; }
+.mainmenu ul li { position: relative; float: left; }
 .mainmenu ul li:first-child a { color: #000077; }
 
 .mainmenu__link { display: block; margin: 13px 5px 0px 0px; color: white; text-decoration: none; font-size: 14px; }
 .mainmenu__link:hover { color: #000077; }
-.mainmenu__link.showroom { font-size: 17px; font-weight: bold; margin: 9px 5px 0px 5px; }
+.mainmenu__link.showroom { font-size: 17px; font-weight: bold; padding: 0 7px; margin: 9px 0px 0px 0px; }
+.mainmenu__link.is-active { background: white; color: #000077; }
 
-.mainmenu__dropdown { display: none; }
+.mainmenu__dropdown { position: absolute; top: 100%; left: -1px; width: 198px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 8px; border: 1px solid #999999; border-top: none; background: white; z-index: 999; }
+.mainmenu__dropdown a { text-decoration: none; font-size: 11px; color: #4c4c4c !important; }
+.mainmenu__dropdown ul { margin-bottom: 10px; }
+.mainmenu__dropdown > li > a { color: black !important; font-weight: bold; }
 
 .submenu ul { width: 755px; border-top: 1px solid #aaaaaa; *zoom: 1; }
 .submenu ul:after { content: " "; display: table; clear: both; }
@@ -47,6 +55,8 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 .submenu ul li:first-child a { padding: 0 8px 0 0; }
 .submenu ul li a { display: inline-block; height: 22px; line-height: 22px; padding: 0 8px; font-size: 11px; text-decoration: none; color: white; }
 .submenu ul li a:hover { color: #000077; }
+
+.disrt { position: absolute; left: 791px; top: 0px; width: 187px; height: 95px; z-index: 899; }
 
 .footer { height: 25px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-top: 1px solid #999999; }
 
