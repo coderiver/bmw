@@ -1,2 +1,83 @@
 // Normally mainpage styles
- 
+
+.slider
+	position: relative
+	height: 291px
+.cycle-next 
+	position: absolute
+	bottom: 7px
+	right: 45px
+	+s(next_large)
+	cursor: pointer
+	z-index: 999
+	&:hover
+		+s(next_large-h)
+.main-list
+	float: left
+	width: 298px
+	padding: 12px 20px 12px 10px
+	border-left: 1px solid #999
+	+box
+	&:first-child
+		padding: 12px 30px
+		border-left: none 
+	.link
+		display: block
+	.link_more
+		margin-left: 92px 	
+.main-list__item
+	display: block
+	margin-bottom: 30px
+	text-decoration: none
+	+clr
+	color: #4c4c4c
+	&:hover
+		color: #003399
+		.main-list__date
+			color: #003399
+.main-list__img
+	float: left
+	width: 86px 
+	margin-top: 3px
+	height: 48px
+	margin-right: 5px
+	img
+		width: 86px
+		height: 48px
+.main-list__text
+	float: left
+	width: 156px
+	font-size: 11px
+	color: #4c4c4c
+.main-list__date
+	font-weight: bold
+	text-decoration: none
+.main-right 
+	+clr
+	float: left
+	width: 427px
+	padding-top: 17px
+	border-left: 1px solid #999
+	.quicklinks
+		margin-left: 10px
+	.rating
+		float: right
+		margin-bottom: 15px
+.quicklinks
+	float: left 
+	p
+		font-size: 11px
+.rating
+	p
+		font-size: 11px
+		font-weight: bold
+.rating-wrap
+	width: 220px
+	height: 75px
+	background: #ccc 		
+
+		
+	    
+		
+
+	 

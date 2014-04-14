@@ -49,15 +49,21 @@ body
 	height: auto !important
 	height: 100%
 	margin: 0 auto -25px
+.container
+	width: 1024px
+.clr
+	+clr		
 .push
 	height: 25px
 // common blocks
 
 // header
-.header      
+.header
+	position: relative      
 	padding-top: 14px
 	margin-bottom: -22px
 	+box-shadow(0 0 7px #313030)
+	z-index: 9999
 .header__inner
 	height: 60px
 	padding: 0 30px 
@@ -75,14 +81,15 @@ body
 	font-size: 11px
 	width: 191px
 	color: #000
+	background: #fff 
 	text-decoration: none
 .mainmenu
 	display: inline-block
 	height: 27px
 	padding-bottom: 4px 
-	ul
+	& > ul
 		+clr
-		li
+		& > li
 			position: relative
 			float: left
 			&:first-child
@@ -97,10 +104,11 @@ body
 	&:hover
 		color: #000077
 	&.showroom
-		font-size: 17px
-		font-weight: bold
 		padding: 0 7px 
-		margin: 9px 0px 0px 0px
+		&.series
+			margin: 9px 0px 0px 0px
+			font-size: 17px
+			font-weight: bold
 	&.is-active
 		background: #fff
 		color: #000077 	
@@ -109,6 +117,7 @@ body
 	top: 100%
 	left: -1px
 	width: 198px
+	height: 337px
 	+box
 	padding: 8px 
 	border: 1px solid #999999
@@ -169,20 +178,68 @@ body
 		li
 			float: left
 			margin-left: 10px
-			a
-				position: relative
-				display: inline-block
-				padding-left: 10px 
-				color: #4c4c4c
-				font-size: 11px
-				text-decoration: none
-				&:before
-					content: ""
-					position: absolute
-					top: 4px
-					left: 0px
-					+arr(3, 6, #4c4c4c, r)
-				&:hover
-					color: #003399	
-					&:before
-						+arr(3, 6, #003399, r)
+		a
+			display: inline-block	
+.link
+	position: relative
+	color: #4c4c4c
+	font-size: 11px
+	text-decoration: none
+	&:first-letter
+		padding-left: 10px 
+	&:before
+		content: ""
+		position: absolute
+		top: 4px
+		left: 0px
+		+arr(3, 6, #4c4c4c, r)
+	&:hover
+		color: #003399	
+		&:before
+			+arr(3, 6, #003399, r)
+
+// select
+.select
+	position: relative
+	display: inline-block	
+.select__text
+	position: relative
+	width: 173px
+	height: 18px
+	line-height: 16px
+	padding: 0 5px 
+	+box
+	border: 1px solid #003399
+	font-size: 11px
+	cursor: pointer
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		right: 15px
+		width: 1px
+		height: 16px 
+		background: #003399
+	&:after
+		content: ""
+		position: absolute
+		top: 5px
+		right: 3px
+		+arr(10, 5, #003399, b)
+.select__dropdown
+	position: absolute
+	top: 17px
+	left: 0
+	right: 0
+	border: 1px solid #003399
+	padding: 10px 0 
+	li
+		a
+			display: block
+			padding: 0 5px
+			color: #000
+			font-size: 11px
+			text-decoration: none
+			&:hover
+				color: #fff
+				background: #003399 	

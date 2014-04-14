@@ -8,6 +8,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -21,7 +22,7 @@
 				<ul>
 					<li><a href="#" class="mainmenu__link">Home</a></li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">1</a>
+						<a href="#" class="mainmenu__link showroom series">1</a>
 						<ul class="mainmenu__dropdown">
 							<li>
 								<a href="#">Обзор</a>
@@ -38,101 +39,179 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">3</a>
+						<a href="#" class="mainmenu__link showroom series">3</a>
 						<ul class="mainmenu__dropdown">
 							<li>
 								<a href="#">Обзор</a>
 								<ul>
-									<li><a href="#">BMW 1 серии</a></li>
+									<li><a href="#">BMW 3 серии</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="#">BMW 1 серии</a>
+								<a href="#">BMW 3 серии</a>
 								<ul>
-									<li><a href="#">BMW 1 серии (5 дверей)</a></li>
+									<li><a href="#">BMW 3 серии Седан</a></li>
+									<li><a href="#">BMW 3 серии Туринг</a></li>
+									<li><a href="#">BMW 3 серии Гран Туризмо</a></li>
+									<li><a href="#">BMW 3 серии Купе</a></li>
+									<li><a href="#">BMW 3 серии Кабриолет</a></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">4</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom series">5</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<a href="#">Обзор</a>
+								<ul>
+									<li><a href="#">BMW 5 серии</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">BMW 5 серии</a>
+								<ul>
+									<li><a href="#">BMW 5 серии Седан</a></li>
+									<li><a href="#">BMW 5 серии Туринг</a></li>
+									<li><a href="#">BMW 5 серии Гран Туризмо</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">5</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom series">6</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<a href="#">Обзор</a>
+								<ul>
+									<li><a href="#">BMW 6 серии</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">BMW 6 серии</a>
+								<ul>
+									<li><a href="#">BMW 6 серии Купе</a></li>
+									<li><a href="#">BMW 6 серии Гран Купе</a></li>
+									<li><a href="#">BMW 6 серии Кабриолет</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">6</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom series">7</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<a href="#">Обзор</a>
+								<ul>
+									<li><a href="#">BMW 7 серии</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">BMW 7 серии</a>
+								<ul>
+									<li><a href="#">BMW 7 серии Седан</a></li>
+									<li><a href="#">BMW 7 серии High Security</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">7</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom series">X</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<a href="#">Обзор</a>
+								<ul>
+									<li><a href="#">BMW X серии</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">BMW X серии</a>
+								<ul>
+									<li><a href="#">BMW X1</a></li>
+									<li><a href="#">BMW X3</a></li>
+									<li><a href="#">BMW X5</a></li>
+									<li><a href="#">BMW X6</a></li>
+									<li><a href="#">BMW X5 Security</a></li>
+									<li><a href="#">BMW X5 Security Plus</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">X</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom series">Z4</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<a href="#">BMW Z4</a>
+								<ul>
+									<li><a href="#">BMW Z4 Родстер</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">Z4</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom series">M</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<a href="#">Обзор</a>
+								<ul>
+									<li><a href="#">BMW M серии</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">BMW M серии</a>
+								<ul>
+									<li><a href="#">BMW M3 Купе</a></li>
+									<li><a href="#">BMW M3 Кабриолет</a></li>
+									<li><a href="#">BMW M5 Седан</a></li>
+									<li><a href="#">BMW M6 Купе</a></li>
+									<li><a href="#">BMW M6 Гран Купе</a></li>
+									<li><a href="#">BMW M6 Кабриолет</a></li>
+									<li><a href="#">BMW Х5 М</a></li>
+									<li><a href="#">BMW Х6 М</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">M</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom">BMW с пробегом</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<ul>
+									<li><a href="#">Автомобили с пробегом</a></li>
+									<li><a href="#">Автомобили BMW Premium selection**</a></li>
+									<li><a href="#">Автомобили BMW с пробегом Трейд-ин</a></li>
+									<li><a href="#">Кредитные предложения</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link">BMW с пробегом</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom">Владельцам BMW</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<ul>
+									<li><a href="#">Сервис BMW</a></li>
+									<li><a href="#">Обзор</a></li>
+									<li><a href="#">Аксессуары BMW</a></li>
+									<li><a href="#">Сервис и гарантия</a></li>
+									<li><a href="#">Оригинальные запчасти BMW</a></li>
+									<li><a href="#">Специальные предложения</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link">Владельцам BMW</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
-					</li>
-					<li>
-						<a href="#" class="mainmenu__link">Контакты</a>
-						<!-- <ul class="mainmenu__dropdown">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul> -->
+						<a href="#" class="mainmenu__link showroom">Контакты</a>
+						<ul class="mainmenu__dropdown">
+							<li>
+								<ul>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Как нас найти</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Обратная связь</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="#" class="mainmenu__link">Мир BMW</a>
@@ -158,6 +237,124 @@
 			<img src="img/distr.png" alt="">
 		</div>
 	</header>
+	<div class="container">
+		<!-- BEGIN slider -->
+		<div class="slider">
+			
+			<!-- prev/next links -->
+    		<div class="cycle-next"></div>
+			<!-- slider items -->
+			<div class="cycle-slideshow"
+			data-cycle-slides="> div"
+			data-cycle-next=".cycle-next"
+			>
+    			<div class="slider__item">
+    				<img src="http://lorempixel.com/1024/291/animals" alt="">
+    			</div>
+    			<div class="slider__item">
+    				<img src="http://lorempixel.com/1024/291/sports" alt="">
+    			</div>	
+			</div>
+		</div>
+		<!-- END slider -->
+		<div class="clr">
+			<div class="main-list">
+				<ul>
+					<li>
+						<a class="main-list__item" href="#">
+							<div class="main-list__img">
+								<img src="img/news1.jpg" alt="">
+							</div>
+							<div class="main-list__text">
+								<div class="main-list__date">05.03.2013</div>
+								<div class="link">BMW на 83-м Международном автосалоне в Женеве 2013 года</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="main-list__item" href="#">
+							<div class="main-list__img">
+								<img src="img/news1.jpg" alt="">
+							</div>
+							<div class="main-list__text">
+								<div class="main-list__date">05.03.2013</div>
+								<div class="link">Новый BMW 3 серии Гран Туризмо</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="main-list__item" href="#">
+							<div class="main-list__img">
+								<img src="img/news1.jpg" alt="">
+							</div>
+							<div class="main-list__text">
+								<div class="main-list__date">05.03.2013</div>
+								<div class="link">Дизайн концепт-каров BMW</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="link link_more">Еще новости</a>
+				<a href="#" class="link link_more">Архив новостей</a>
+			</div>
+			<div class="main-list">
+				<ul>
+					<li>
+						<a class="main-list__item" href="#">
+							<div class="main-list__img">
+								<img src="img/news1.jpg" alt="">
+							</div>
+							<div class="main-list__text">
+								<div class="main-list__date">05.03.2013</div>
+								<div class="link">BMW на 83-м Международном автосалоне в Женеве 2013 года</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="main-list__item" href="#">
+							<div class="main-list__img">
+								<img src="img/news1.jpg" alt="">
+							</div>
+							<div class="main-list__text">
+								<div class="main-list__date">05.03.2013</div>
+								<div class="link">Новый BMW 3 серии Гран Туризмо</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="main-list__item" href="#">
+							<div class="main-list__img">
+								<img src="img/news1.jpg" alt="">
+							</div>
+							<div class="main-list__text">
+								<div class="main-list__date">05.03.2013</div>
+								<div class="link">Дизайн концепт-каров BMW</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="link link_more">Другие предложения</a>
+			</div>
+			<div class="main-right">
+				<div class="quicklinks">
+					<p>Быстрый переход</p>
+					<div class="select js-select">
+					    <div class="select__text js-select-text">Пожалуйста выберите</div>
+					    <input type="hidden" class="js-select-input" value="1">
+					    <ul class="select__dropdown js-select-list" style="display: none;">
+					        <li data-id="0"><a href="#">Тест-драйв</a></li>
+					        <li data-id="1"><a href="#">Конфигуратор</a></li>
+					        <li data-id="2"><a href="#">Корпоративные продажи</a></li>
+					    </ul>
+					</div>
+				</div>
+				<div class="rating">
+					<p>Иванов-Авто 1</p>
+					<div class="rating-wrap">rating iframe here</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- END out-->
 	<div class="push"></div>
 </div>
@@ -168,16 +365,16 @@
 	<div class="footer__inner">
 		<nav class="footer__menu">
 			<ul>
-				<li><a href="#">BMW в России</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Мотоциклы</a></li>
-				<li><a href="#">MINI</a></li>
-				<li><a href="#">Карта сайта</a></li>
-				<li><a href="#">English</a></li>
-				<li><a href="#">Свяжитесь с нами</a></li>
-				<li><a href="#">Поиск</a></li>
-				<li><a href="#">Copyright</a></li>
-				<li><a href="#">Facebook</a></li>
+				<li><a class="link" href="#">BMW в России</a></li>
+				<li><a class="link" href="#">Новости</a></li>
+				<li><a class="link" href="#">Мотоциклы</a></li>
+				<li><a class="link" href="#">MINI</a></li>
+				<li><a class="link" href="#">Карта сайта</a></li>
+				<li><a class="link" href="#">English</a></li>
+				<li><a class="link" href="#">Свяжитесь с нами</a></li>
+				<li><a class="link" href="#">Поиск</a></li>
+				<li><a class="link" href="#">Copyright</a></li>
+				<li><a class="link" href="#">Facebook</a></li>
 			</ul>
 		</nav>
 	</div>
