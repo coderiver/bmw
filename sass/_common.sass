@@ -92,9 +92,6 @@ body
 		& > li
 			position: relative
 			float: left
-			&:first-child
-				a
-					color: #000077
 .mainmenu__link
 	display: block
 	margin: 13px 5px 0px 0px
@@ -103,6 +100,8 @@ body
 	font-size: 14px
 	&:hover
 		color: #000077
+	&.is-open
+		color: #000077	
 	&.showroom
 		padding: 0 7px 
 		&.series
@@ -177,11 +176,10 @@ body
 		padding-top: 4px
 		li
 			float: left
-			margin-left: 10px
-		a
-			display: inline-block	
+			margin-left: 10px	
 .link
 	position: relative
+	display: inline-block
 	color: #4c4c4c
 	font-size: 11px
 	text-decoration: none

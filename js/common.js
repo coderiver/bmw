@@ -57,7 +57,6 @@ $(document).ready(function() {
                 //return false;
             });
         });
-
     }
     select();
     $('.js-select').click(function(event){

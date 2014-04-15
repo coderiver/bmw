@@ -42,10 +42,10 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 .mainmenu > ul { *zoom: 1; }
 .mainmenu > ul:after { content: " "; display: table; clear: both; }
 .mainmenu > ul > li { position: relative; float: left; }
-.mainmenu > ul > li:first-child a { color: #000077; }
 
 .mainmenu__link { display: block; margin: 13px 5px 0px 0px; color: white; text-decoration: none; font-size: 14px; }
 .mainmenu__link:hover { color: #000077; }
+.mainmenu__link.is-open { color: #000077; }
 .mainmenu__link.showroom { padding: 0 7px; }
 .mainmenu__link.showroom.series { margin: 9px 0px 0px 0px; font-size: 17px; font-weight: bold; }
 .mainmenu__link.is-active { background: white; color: #000077; }
@@ -73,9 +73,8 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 .footer__menu ul { *zoom: 1; padding-top: 4px; }
 .footer__menu ul:after { content: " "; display: table; clear: both; }
 .footer__menu ul li { float: left; margin-left: 10px; }
-.footer__menu ul a { display: inline-block; }
 
-.link { position: relative; color: #4c4c4c; font-size: 11px; text-decoration: none; }
+.link { position: relative; display: inline-block; color: #4c4c4c; font-size: 11px; text-decoration: none; }
 .link:first-letter { padding-left: 10px; }
 .link:before { content: ""; position: absolute; top: 4px; left: 0px; width: 0px; height: 0px; border-style: solid; border-width: 3px 0 3px 3px; border-color: transparent transparent transparent #4c4c4c; }
 .link:hover { color: #003399; }
@@ -98,11 +97,16 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 
 .slider { position: relative; height: 291px; }
 
-.cycle-next { position: absolute; bottom: 7px; right: 45px; background: url('../img/icons-s08aab70cca.png') 0 0 no-repeat; width: 17px; height: 16px; cursor: pointer; z-index: 999; }
-.cycle-next:hover { background: url('../img/icons-s08aab70cca.png') 0 -56px no-repeat; width: 17px; height: 16px; }
+.slider_small { clear: both; height: 195px; margin-bottom: 18px; }
+.slider_small .slider__item { height: 195px; }
+.slider_small .slider__item img { width: 100%; }
+.slider_small .cycle-next2 { bottom: 0px; right: 0px; }
+
+.cycle-next, .cycle-next2 { position: absolute; bottom: 7px; right: 45px; background: url('../img/icons-s08aab70cca.png') 0 0 no-repeat; width: 17px; height: 16px; cursor: pointer; z-index: 999; }
+.cycle-next:hover, .cycle-next2:hover { background: url('../img/icons-s08aab70cca.png') 0 -56px no-repeat; width: 17px; height: 16px; }
 
 .main-list { float: left; width: 298px; padding: 12px 20px 12px 10px; border-left: 1px solid #999999; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.main-list:first-child { padding: 12px 30px; border-left: none; }
+.main-list:first-child { padding: 12px 20px 12px 30px; border-left: none; }
 .main-list .link { display: block; }
 .main-list .link_more { margin-left: 92px; }
 
@@ -110,6 +114,7 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 .main-list__item:after { content: " "; display: table; clear: both; }
 .main-list__item:hover { color: #003399; }
 .main-list__item:hover .main-list__date { color: #003399; }
+.main-list__item:hover .link { color: #003399; }
 
 .main-list__img { float: left; width: 86px; margin-top: 3px; height: 48px; margin-right: 5px; }
 .main-list__img img { width: 86px; height: 48px; }
@@ -129,3 +134,19 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 .rating p { font-size: 11px; font-weight: bold; }
 
 .rating-wrap { width: 220px; height: 75px; background: #cccccc; }
+
+.likes { clear: both; text-align: right; margin-bottom: 18px; }
+
+.teaser { margin-bottom: 25px; font-size: 0; }
+
+.models { *zoom: 1; margin: 0 29px; }
+.models:after { content: " "; display: table; clear: both; }
+
+.models__item { float: left; width: 154px; margin-left: 50px; }
+.models__item:first-child { margin-left: 0; }
+
+.models__img { margin-bottom: 17px; }
+.models__img img { max-width: 100%; }
+
+.models__links { border-left: 1px solid #999999; padding-left: 8px; min-height: 108px; }
+.models__links a { display: inline-block; }

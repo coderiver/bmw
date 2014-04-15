@@ -3,7 +3,18 @@
 .slider
 	position: relative
 	height: 291px
-.cycle-next 
+.slider_small
+	clear: both
+	height: 195px
+	margin-bottom: 18px
+	.slider__item
+		height: 195px
+		img
+			width: 100%
+	.cycle-next2
+		bottom: 0px
+		right: 0px		 	
+.cycle-next, .cycle-next2 
 	position: absolute
 	bottom: 7px
 	right: 45px
@@ -19,7 +30,7 @@
 	border-left: 1px solid #999
 	+box
 	&:first-child
-		padding: 12px 30px
+		padding: 12px 20px 12px 30px
 		border-left: none 
 	.link
 		display: block
@@ -35,6 +46,8 @@
 		color: #003399
 		.main-list__date
 			color: #003399
+		.link
+			color: #003399	
 .main-list__img
 	float: left
 	width: 86px 
@@ -74,7 +87,11 @@
 .rating-wrap
 	width: 220px
 	height: 75px
-	background: #ccc 		
+	background: #ccc
+.likes
+	clear: both
+	text-align: right
+	margin-bottom: 18px
 
 		
 	    
