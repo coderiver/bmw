@@ -63,6 +63,13 @@ $(document).ready(function() {
         event.stopPropagation();
     });
 
+    // sidebar nav dropdown
+
+    $(".js-sidebar-nav").hide();
+    $(".js-sidebar").on('click', function(){
+        $(".js-sidebar-nav").slideToggle('fast');
+    });
+
 	$(document).click(function(event){
 		$(".showroom").removeClass('is-active');
 		$('.mainmenu__dropdown').hide();

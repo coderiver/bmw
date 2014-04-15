@@ -55,6 +55,9 @@ body
 	+clr		
 .push
 	height: 25px
+.content
+	+clr
+	padding-left: 30px	
 // common blocks
 
 // header
@@ -64,25 +67,16 @@ body
 	margin-bottom: -22px
 	+box-shadow(0 0 7px #313030)
 	z-index: 9999
+.header_inner
+	margin-bottom: -82px	
 .header__inner
 	height: 60px
 	padding: 0 30px 
-	background: #898989
+	background: rgba(#898989, 0.9)
 .header__bottom
 	height: 22px
 	+opacity(.9)
-.droplist
-	display: block
-	padding: 4px 0px 0px 30px
-	border: 1px solid #999
-	border-top: none
-	border-left: none
-	height: 18px
-	font-size: 11px
-	width: 191px
-	color: #000
-	background: #fff 
-	text-decoration: none
+
 .mainmenu
 	display: inline-block
 	height: 27px
@@ -195,6 +189,14 @@ body
 		color: #003399	
 		&:before
 			+arr(3, 6, #003399, r)
+.link_white
+	color: #fff
+	&:before
+		+arr(3, 6, #fff, r)
+	&:hover
+		color: #fff
+		&:before
+			+arr(3, 6, #fff, r)				
 
 // select
 .select

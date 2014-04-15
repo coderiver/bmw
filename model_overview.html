@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>overview</title>
+	<title>model_overview</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -39,7 +39,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link is-open showroom series">3</a>
+						<a href="#" class="mainmenu__link showroom series">3</a>
 						<ul class="mainmenu__dropdown">
 							<li>
 								<a href="#">Обзор</a>
@@ -98,7 +98,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom series">7</a>
+						<a href="#" class="mainmenu__link showroom is-open series">7</a>
 						<ul class="mainmenu__dropdown">
 							<li>
 								<a href="#">Обзор</a>
@@ -231,7 +231,20 @@
 			</nav>
 		</div>
 		<div class="header__bottom">
-			<a href="#" class="droplist">BMW 3 Серии</a>
+			<div class="droplist">
+				<a href="#" class="droplist__header js-sidebar">BMW 3 Серии</a>
+				<ul class="droplist__menu js-sidebar-nav">
+					<li><a href="#">Обзор</a></li>
+					<li><a href="#">Мультимедийная презентация</a></li>
+					<li><a href="#">Все факты</a></li>
+					<li><a href="#">BMW 7 Серии xDrive</a></li>
+					<li><a href="#">Каталог он-лайн</a></li>
+					<li><a href="#">Цены, расходы и обслуживание</a></li>
+					<li><a href="#">Конфигуратор BMW</a></li>
+					<li><a href="#">Заказать тест-драйв</a></li>
+				</ul>
+				<a href="#" class="droplist__footer js-sidebar"></a>
+			</div>
 		</div>
 		<div class="disrt">
 			<img src="img/distr.png" alt="">
@@ -240,65 +253,88 @@
 	<div class="container">
 		<!-- BEGIN teaser -->
 		<div class= "teaser">
-			<img src="img/BMW_3series_teaser.jpg" alt="">
+			<img src="img/overview_7.jpg" alt="">
 		</div>
 		<!-- END teaser -->
-		<ul class="models">
-			<li class="models__item">
-				<div class="models__img">
-					<img src="img/3_sedan.jpg" alt="">
-				</div>
-				<div class="models__links">
-					<p><strong>BMW 3 Серии Седан</strong></p>
-					<ul>
-						<li><a href="#" class="link">Обзор</a></li>
-						<li><a href="#" class="link">Все факты</a></li>
-						<li><a href="#" class="link">Конфигуратор</a></li>
-						<li><a href="#" class="link">Заказать тест-драйв</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="models__item">
-				<div class="models__img">
-					<img src="img/3_touring.jpg" alt="">
-				</div>
-				<div class="models__links">
-					<p><strong>BMW 3 Серии Туринг</strong></p>
-					<ul>
-						<li><a href="#" class="link">Обзор</a></li>
-						<li><a href="#" class="link">Все факты</a></li>
-						<li><a href="#" class="link">Конфигуратор</a></li>
-						<li><a href="#" class="link">Заказать тест-драйв</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="models__item">
-				<div class="models__img">
-					<img src="img/3_gt.jpg" alt="">
-				</div>
-				<div class="models__links">
-					<p><strong>BMW 3 серии Гран Туризмо</strong></p>
-					<ul>
-						<li><a href="#" class="link">Обзор</a></li>
-						<li><a href="#" class="link">Все факты</a></li>
-						<li><a href="#" class="link">Конфигуратор</a></li>
-						<li><a href="#" class="link">Заказать тест-драйв</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="models__item">
-				<div class="models__img">
-					<img src="img/usedvehicles.jpg" alt="">
-				</div>
-				<div class="models__links">
-					<p><strong>Автомобили BMW с пробегом</strong></p>
-					<ul>
-						<li><a href="#" class="link">BMW Premium Selection</a></li>
-						<li><a href="#" class="link">BMW с пробегом</a></li>
-					</ul>
-				</div>
-			</li>
-		</ul>
+		<div class="content">
+			<div class="links">
+				<div class="links__title"><strong>Ссылки</strong></div>
+				<ul>
+					<li><a href="#" class="link">Каталог (PDF, 5,28 MB)</a></li>
+					<li><a href="#" class="link">Каталог в формате Flash</a></li>
+				</ul>
+			</div>
+			<div class="details-wrap">
+				<ul class="details">
+					<li>
+						<a href="#" class="detalis__item">
+							<div class="details__teaser">
+								<img src="img/teaser_7.jpg" alt="">
+							</div>
+							<div class="details__title">
+								<span class="link link_white">Визуализация 360°</span>
+							</div>
+							<p> Осмотрите новый BMW 7 серии Седан со всех сторон, оцените сочетания окраски, отделки салона и колесных дисков. </p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="detalis__item">
+							<div class="details__teaser">
+								<img src="img/teaser_7.jpg" alt="">
+							</div>
+							<div class="details__title">
+								<span class="link link_white">Визуализация 360°</span>
+							</div>
+							<p> Осмотрите новый BMW 7 серии Седан со всех сторон, оцените сочетания окраски, отделки салона и колесных дисков. </p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="detalis__item">
+							<div class="details__teaser">
+								<img src="img/teaser_7.jpg" alt="">
+							</div>
+							<div class="details__title">
+								<span class="link link_white">Визуализация 360°</span>
+							</div>
+							<p> Осмотрите новый BMW 7 серии Седан со всех сторон, оцените сочетания окраски, отделки салона и колесных дисков. </p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="detalis__item">
+							<div class="details__teaser">
+								<img src="img/teaser_7.jpg" alt="">
+							</div>
+							<div class="details__title">
+								<span class="link link_white">Визуализация 360°</span>
+							</div>
+							<p> Осмотрите новый BMW 7 серии Седан со всех сторон, оцените сочетания окраски, отделки салона и колесных дисков. </p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="detalis__item">
+							<div class="details__teaser">
+								<img src="img/teaser_7.jpg" alt="">
+							</div>
+							<div class="details__title">
+								<span class="link link_white">Визуализация 360°</span>
+							</div>
+							<p> Осмотрите новый BMW 7 серии Седан со всех сторон, оцените сочетания окраски, отделки салона и колесных дисков. </p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="detalis__item">
+							<div class="details__teaser">
+								<img src="img/teaser_7.jpg" alt="">
+							</div>
+							<div class="details__title">
+								<span class="link link_white">Визуализация 360°</span>
+							</div>
+							<p> Осмотрите новый BMW 7 серии Седан со всех сторон, оцените сочетания окраски, отделки салона и колесных дисков. </p>
+						</a>
+					</li>
+				</ul>
+			</div>	
+		</div>
 	</div>
 	<!-- END out-->
 	<div class="push"></div>
