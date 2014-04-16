@@ -33,6 +33,18 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 .content { *zoom: 1; padding-left: 30px; }
 .content:after { content: " "; display: table; clear: both; }
 
+.h1 { font-weight: normal; padding-bottom: 3px; font-size: 20px; line-height: 21px; color: black; }
+
+.h3 { font-size: 14px; line-height: 15px; padding-bottom: 5px; }
+
+.pagination { *zoom: 1; }
+.pagination:after { content: " "; display: table; clear: both; }
+
+.pagination__left { float: left; margin-right: 20px; padding-top: 14px; }
+
+.pagination__right { float: left; }
+.pagination__right a { display: block; margin-bottom: 2px; }
+
 .header { position: relative; padding-top: 14px; margin-bottom: -22px; -webkit-box-shadow: 0 0 7px #313030; -moz-box-shadow: 0 0 7px #313030; box-shadow: 0 0 7px #313030; z-index: 9999; }
 
 .header_inner { margin-bottom: -82px; }
@@ -191,3 +203,9 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 .droplist__submenu a:hover { color: #000077; }
 
 .droplist__footer { display: block; height: 16px; width: 221px; border-bottom: 1px solid #999999; border-right: 1px solid #999999; background: url(../img/dropper_down.png) 0 0 no-repeat; }
+
+.article { padding-left: 192px; font-size: 11px; line-height: 12px; color: black; }
+.article img { margin-bottom: 8px; }
+.article p { margin-bottom: 10px; }
+
+.article__inner { width: 398px; margin-left: 236px; }
