@@ -87,6 +87,15 @@ $(document).ready(function() {
         
     });
 
+    // img zoom
+
+    $('.drawing__large').hide();
+    $(".drawing__btn").on('click', function(){
+        $(this).toggleClass('is-open');
+        $(this).parent().find('.drawing__large').toggle();
+    });
+
+
 	$(document).click(function(event){
 		$(".showroom").removeClass('is-active');
 		$('.mainmenu__dropdown').hide();

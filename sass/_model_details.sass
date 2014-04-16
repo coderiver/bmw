@@ -1,0 +1,67 @@
+// model_details page styles
+
+.model-details
+    position: relative
+    padding-top: 53px 
+    margin-left: 266px
+    width: 662px
+.model-details__menu
+    margin-bottom: 16px
+    +clr
+    li
+        float: left
+        margin-right: 10px
+.model-details__inner
+    position: relative
+    +clr
+.model-details__print
+    position: absolute
+    top: 5px
+    left: -47px
+    +s(print)
+    &:hover
+        +s(print-h)            
+.model-details__col
+    width: 326px
+    float: left
+    margin-left: 10px
+    &:first-child
+        margin-left: 0
+.drawing
+    position: relative
+.drawing__btn
+    position: absolute
+    top: 5px
+    left: 5px
+    +s(lens)
+    cursor: pointer
+    z-index: 3
+    &:hover
+        +s(lens-h)
+    &.is-open
+        +s(lens_minus)
+        &:hover
+            +s(lens_minus-h)            
+.drawing__preview
+    position: relative
+    z-index: 1                         
+.drawing__large
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+.model-details__list
+    margin-bottom: 12px
+    font-size: 11px
+    line-height: 12px    
+.technic-info
+    li
+        +clr
+        border-bottom: 1px solid #999
+        &:first-child
+            border-top: 1px solid #999
+.technic-info__left
+    float: left
+.technic-info__right
+    float: right
+    text-align: right        
