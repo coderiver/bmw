@@ -181,9 +181,13 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 
 .droplist__header { display: block; position: relative; padding: 4px 0px 0px 30px; border: 1px solid #999999; border-top: none; border-left: none; height: 18px; font-size: 11px; width: 191px; color: black; background: white; text-decoration: none; -webkit-box-shadow: 1px 3px 9px -5px #313030; -moz-box-shadow: 1px 3px 9px -5px #313030; box-shadow: 1px 3px 9px -5px #313030; }
 
-.droplist__menu { height: 437px; width: 221px; border-right: 1px solid #999999; background: rgba(255, 255, 255, 0.9); }
-.droplist__menu li { border-bottom: 1px solid #999999; }
-.droplist__menu li a { display: block; height: 24px; line-height: 24px; padding-left: 30px; font-size: 11px; text-decoration: none; color: #4c4c4c; }
-.droplist__menu li a:hover { color: #000077; }
+.droplist__menu { height: 426px; width: 221px; border-right: 1px solid #999999; background: rgba(255, 255, 255, 0.9); }
+.droplist__menu > li { border-bottom: 1px solid #999999; }
+.droplist__menu > li > a { display: block; height: 24px; line-height: 24px; padding-left: 30px; font-size: 11px; text-decoration: none; color: #4c4c4c; }
+.droplist__menu > li > a:hover { color: #000077; }
+
+.droplist__submenu { height: 193px; padding-top: 5px; padding-left: 30px; }
+.droplist__submenu a { font-size: 11px; text-decoration: none; color: #4c4c4c; }
+.droplist__submenu a:hover { color: #000077; }
 
 .droplist__footer { display: block; height: 16px; width: 221px; border-bottom: 1px solid #999999; border-right: 1px solid #999999; background: url(../img/dropper_down.png) 0 0 no-repeat; }

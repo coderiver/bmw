@@ -70,6 +70,23 @@ $(document).ready(function() {
         $(".js-sidebar-nav").slideToggle('fast');
     });
 
+    // sidebar nav accordeon
+
+    $(".droplist__submenu").hide();
+    $(".js-droplist-sub").on('click', function(){
+        $(".droplist__submenu").hide();
+        if ($(this).hasClass('is-open')) {
+            $(".js-droplist-sub").removeClass('is-open');
+            $(this).next().hide();
+            $(this).removeClass('is-open');
+        }
+        else{
+            $(".js-droplist-sub").removeClass('is-open');
+            $(this).addClass('is-open').next().show();
+        };
+        
+    });
+
 	$(document).click(function(event){
 		$(".showroom").removeClass('is-active');
 		$('.mainmenu__dropdown').hide();
