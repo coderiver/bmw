@@ -1,0 +1,50 @@
+// contacts
+.contacts
+    padding: 15px 15px 40px 300px 
+.tabs__nav
+    position: relative
+    +clr
+    top: 1px
+    height: 23px
+    li
+        float: left
+        margin-right: 4px
+        a
+            position: relative
+            display: block
+            height: 21px
+            padding: 0 5px 
+            line-height: 21px
+            border: 1px solid #999
+            border-bottom: 1px solid #023499
+            background: #fff 
+            font-size: 11px
+            color: #4C4C4C
+            text-decoration: none
+            &:before
+                content: ""
+                position: absolute
+                top: -1px
+                right: -1px
+                width: 7px
+                height: 8px
+                background: url(../img/tab-link.jpg) 0 0 no-repeat 
+            &.is-active 
+                border: 1px solid #023499
+                border-bottom: 1px solid #fff
+                &:before
+                    background: url(../img/tab-link-h.jpg) 0 0 no-repeat       
+.tabs__content
+    padding: 15px
+    border: 1px solid #023499
+    width: 650px
+    overflow: hidden
+.map
+    float: left
+.adress
+    float: right
+    width: 200px
+    font-size: 11px
+    line-height: 12px
+    p
+        margin-bottom: 12px                    

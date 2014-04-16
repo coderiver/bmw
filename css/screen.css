@@ -245,3 +245,20 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 .technic-info__left { float: left; }
 
 .technic-info__right { float: right; text-align: right; }
+
+.contacts { padding: 15px 15px 40px 300px; }
+
+.tabs__nav { position: relative; *zoom: 1; top: 1px; height: 23px; }
+.tabs__nav:after { content: " "; display: table; clear: both; }
+.tabs__nav li { float: left; margin-right: 4px; }
+.tabs__nav li a { position: relative; display: block; height: 21px; padding: 0 5px; line-height: 21px; border: 1px solid #999999; border-bottom: 1px solid #023499; background: white; font-size: 11px; color: #4c4c4c; text-decoration: none; }
+.tabs__nav li a:before { content: ""; position: absolute; top: -1px; right: -1px; width: 7px; height: 8px; background: url(../img/tab-link.jpg) 0 0 no-repeat; }
+.tabs__nav li a.is-active { border: 1px solid #023499; border-bottom: 1px solid white; }
+.tabs__nav li a.is-active:before { background: url(../img/tab-link-h.jpg) 0 0 no-repeat; }
+
+.tabs__content { padding: 15px; border: 1px solid #023499; width: 650px; overflow: hidden; }
+
+.map { float: left; }
+
+.adress { float: right; width: 200px; font-size: 11px; line-height: 12px; }
+.adress p { margin-bottom: 12px; }

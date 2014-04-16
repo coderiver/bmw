@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>overview</title>
+	<title>contacts</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -16,7 +16,7 @@
 <!-- BEGIN  out-->
 <div class="out">
 	<!-- BEGIN  out-->
-	<header class="header header_inner">
+	<header class="header">
 		<div class="header__inner">
 			<nav class="mainmenu">
 				<ul>
@@ -39,7 +39,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link is-open showroom series">3</a>
+						<a href="#" class="mainmenu__link showroom series">3</a>
 						<ul class="mainmenu__dropdown">
 							<li>
 								<a href="#">Обзор</a>
@@ -201,7 +201,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="mainmenu__link showroom">Контакты</a>
+						<a href="#" class="mainmenu__link is-open showroom">Контакты</a>
 						<ul class="mainmenu__dropdown">
 							<li>
 								<ul>
@@ -232,7 +232,14 @@
 		</div>
 		<div class="header__bottom">
 			<div class="droplist">
-				<a href="#" class="droplist__header js-sidebar">BMW 3 Серии</a>
+				<a href="#" class="droplist__header js-sidebar">О нас</a>
+				<ul class="droplist__menu js-sidebar-nav">
+					<li><a href="#">Как нас найти</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Наша команда</a></li>
+				</ul>
+				<a href="#" class="droplist__footer js-sidebar"></a>
 			</div>
 		</div>
 		<div class="disrt">
@@ -242,65 +249,45 @@
 	<div class="container">
 		<!-- BEGIN teaser -->
 		<div class= "teaser">
-			<img src="img/BMW_3series_teaser.jpg" alt="">
+			<img src="img/introduction.jpg" alt="">
 		</div>
 		<!-- END teaser -->
-		<ul class="models">
-			<li class="models__item">
-				<div class="models__img">
-					<img src="img/3_sedan.jpg" alt="">
+		<div class="contacts">
+			<h1 class="h1">Контакты</h1>
+			<div class="tabs">
+				<ul class="tabs__nav">
+					<li>
+						<a href="#" class="is-active">БорисХоф - Ярославское ш.</a>
+					</li>
+					<li>
+						<a href="#">БорисХоф - Балашиха</a>
+					</li>
+					<li>
+						<a href="#">БорисХоф - МКАД 29</a>
+					</li>
+				</ul>
+				<div class="tabs__content">
+					<div class="map">
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=d&amp;saddr=BMW+%D0%91%D0%BE%D1%80%D0%BE%D1%81%D0%A5%D0%BE%D1%84+%4055.784899,37.879658&amp;daddr=&amp;hl=ru&amp;geocode=&amp;mra=ls&amp;sll=55.784899,37.879658&amp;sspn=0.008241,0.019226&amp;ie=UTF8&amp;ll=55.784911,37.879658&amp;spn=0.008241,0.019226&amp;output=embed&amp;s=AARTsJow4iKs1Ssyus5u8iwxMlYLNmOkcQ"></iframe><br><small><a href="http://maps.google.com/maps?f=d&amp;saddr=BMW+%D0%91%D0%BE%D1%80%D0%BE%D1%81%D0%A5%D0%BE%D1%84+%4055.784899,37.879658&amp;daddr=&amp;hl=ru&amp;geocode=&amp;mra=ls&amp;sll=55.784899,37.879658&amp;sspn=0.008241,0.019226&amp;ie=UTF8&amp;ll=55.784911,37.879658&amp;spn=0.008241,0.019226&amp;source=embed" style="color: rgb(0, 0, 255); text-align: left;">Просмотреть увеличенную карту</a></small>
+					</div>
+					<div class="adress">
+						<p>Адрес</p>
+						<p>Россия, 143961, Балашиха Горьковское шоссе 2 км от МКАД</p>
+						<p>Центр расположен справа по ходу движения в сторону области, при въезде в г. Балашиха</p>
+						<p>Телефон<br>+7 (495) 745-11-11</p>
+						<p>+7 (495) 728-42-42</p>
+						<p>Факс<br>+7 (495) 995-83-03</p>
+						<p>E-mail<br>info@bmw-borishof.ru</p>
+						<p>Автосалон</p>
+						<p>пн-пт с 9:00 до 22:00 сб с 9:00 до 21.00 вс с 9:00 до 21.00</p>
+						<p>Сервис</p>
+						<p>пн-вс с 8:00 до 22:00</p>
+						<p>Запасные части</p>
+						<p>пн-вс с 8:00 до 20:00</p>
+					</div>
 				</div>
-				<div class="models__links">
-					<p><strong>BMW 3 Серии Седан</strong></p>
-					<ul>
-						<li><a href="#" class="link">Обзор</a></li>
-						<li><a href="#" class="link">Все факты</a></li>
-						<li><a href="#" class="link">Конфигуратор</a></li>
-						<li><a href="#" class="link">Заказать тест-драйв</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="models__item">
-				<div class="models__img">
-					<img src="img/3_touring.jpg" alt="">
-				</div>
-				<div class="models__links">
-					<p><strong>BMW 3 Серии Туринг</strong></p>
-					<ul>
-						<li><a href="#" class="link">Обзор</a></li>
-						<li><a href="#" class="link">Все факты</a></li>
-						<li><a href="#" class="link">Конфигуратор</a></li>
-						<li><a href="#" class="link">Заказать тест-драйв</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="models__item">
-				<div class="models__img">
-					<img src="img/3_gt.jpg" alt="">
-				</div>
-				<div class="models__links">
-					<p><strong>BMW 3 серии Гран Туризмо</strong></p>
-					<ul>
-						<li><a href="#" class="link">Обзор</a></li>
-						<li><a href="#" class="link">Все факты</a></li>
-						<li><a href="#" class="link">Конфигуратор</a></li>
-						<li><a href="#" class="link">Заказать тест-драйв</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="models__item">
-				<div class="models__img">
-					<img src="img/usedvehicles.jpg" alt="">
-				</div>
-				<div class="models__links">
-					<p><strong>Автомобили BMW с пробегом</strong></p>
-					<ul>
-						<li><a href="#" class="link">BMW Premium Selection</a></li>
-						<li><a href="#" class="link">BMW с пробегом</a></li>
-					</ul>
-				</div>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</div>
 	<!-- END out-->
 	<div class="push"></div>
