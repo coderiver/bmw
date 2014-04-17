@@ -1,0 +1,69 @@
+// styles for xDrive page
+
+.xdrive
+    position: relative
+    .pagination
+        margin-left: 218px
+.xdrive__slider
+    position: relative
+    margin-left: -200px
+    margin-bottom: 42px
+    .cycle-slideshow
+        width: 100%
+.slider-teaser
+    position: relative
+    font-size: 0
+    &:before
+        content: ""
+        position: absolute 
+        top: 0
+        left: 0
+        bottom: 0
+        width: 528px
+        background: rgba(#000, 0.8)
+        z-index: 100
+    &:after
+        content: ""
+        position: absolute 
+        top: 0
+        right: 0
+        bottom: 0
+        width: 168px
+        background: rgba(#000, 0.8)
+        z-index: 100
+.slider-teaser__nav
+    position: absolute
+    top: 304px
+    left: 528px          
+    z-index: 999
+    a
+        display: inline-block
+        font-size: 0
+        border: 2px solid #fff 
+        img
+            width: 37px
+            height: 29px
+        &:hover
+            border: 2px solid #003399
+        &.cycle-pager-active
+            border: 2px solid #003399
+.xdrive__text
+    width: 374px
+    padding-left: 457px
+    font-size: 11px
+    line-height: 12px
+    p
+        margin-bottom: 10px
+.xdrive__list
+    position: absolute
+    top: 260px
+    right: 30px
+    width: 247px
+    height: 500px
+    padding-left: 8px
+    padding-top: 18px 
+    background: #fff
+    z-index: 999
+    .main-list__item
+        margin-bottom: 22px
+     

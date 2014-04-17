@@ -95,6 +95,17 @@ $(document).ready(function() {
         $(this).parent().find('.drawing__large').toggle();
     });
 
+    // slider initialize
+    
+    $(".js-slider-teaser").cycle({
+        fx: "carousel",
+        timeout: 0,
+        pager: "#adv-custom-pager",
+        carouselFluid: true,
+        allowWrap: true,
+        pagerTemplate: "<a href=#><img src='{{src}}' width=20 height=20></a>"
+    });
+    $(".js-slider-teaser").cycle('goto', 1);
 
 	$(document).click(function(event){
 		$(".showroom").removeClass('is-active');

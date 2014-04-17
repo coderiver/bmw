@@ -19,7 +19,7 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 1.4; }
+body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 1.4; }
 
 .out { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -25px; }
 
@@ -37,7 +37,7 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 
 .h3 { font-size: 14px; line-height: 15px; padding-bottom: 5px; }
 
-.pagination { *zoom: 1; }
+.pagination { *zoom: 1; font-size: 11px; }
 .pagination:after { content: " "; display: table; clear: both; }
 
 .pagination__left { float: left; margin-right: 20px; padding-top: 14px; }
@@ -262,3 +262,25 @@ body { font-size: 12px; font-family: arial, helvetica, sans-serif; line-height: 
 
 .adress { float: right; width: 200px; font-size: 11px; line-height: 12px; }
 .adress p { margin-bottom: 12px; }
+
+.xdrive { position: relative; }
+.xdrive .pagination { margin-left: 218px; }
+
+.xdrive__slider { position: relative; margin-left: -200px; margin-bottom: 42px; }
+.xdrive__slider .cycle-slideshow { width: 100%; }
+
+.slider-teaser { position: relative; font-size: 0; }
+.slider-teaser:before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 528px; background: rgba(0, 0, 0, 0.8); z-index: 100; }
+.slider-teaser:after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 168px; background: rgba(0, 0, 0, 0.8); z-index: 100; }
+
+.slider-teaser__nav { position: absolute; top: 304px; left: 528px; z-index: 999; }
+.slider-teaser__nav a { display: inline-block; font-size: 0; border: 2px solid white; }
+.slider-teaser__nav a img { width: 37px; height: 29px; }
+.slider-teaser__nav a:hover { border: 2px solid #003399; }
+.slider-teaser__nav a.cycle-pager-active { border: 2px solid #003399; }
+
+.xdrive__text { width: 374px; padding-left: 457px; font-size: 11px; line-height: 12px; }
+.xdrive__text p { margin-bottom: 10px; }
+
+.xdrive__list { position: absolute; top: 260px; right: 30px; width: 247px; height: 500px; padding-left: 8px; padding-top: 18px; background: white; z-index: 999; }
+.xdrive__list .main-list__item { margin-bottom: 22px; }
