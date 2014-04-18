@@ -1,0 +1,76 @@
+// styles for news page 
+.news
+    padding-top: 92px 
+    margin-left: 292px    
+.news__item
+    +clr
+    padding-bottom: 27px
+    border-bottom: 1px solid #E0E0E0
+    margin-bottom: 20px
+.news__img
+    float: left
+    margin-right: 20px
+.news__content
+    float: left
+    width: 482px
+.news__topper
+    position: relative
+    padding-left: 48px
+    &:before
+        content: ""
+        position: absolute
+        top: 0px
+        left: 0px
+        +s(news_icon)
+.news__date
+    font-size: 11px
+.news__title
+    display: block
+    color: #333
+    text-decoration: none
+    font-size: 20px
+    font-weight: bold
+    line-height: 20px
+    margin-bottom: 15px
+    &:hover
+        color: #003399
+.news__text
+    font-size: 11px
+    line-height: 12px
+.news__pagination
+    display: inline-block
+    font-size: 0
+    line-height: 0
+    letter-spacing: -1px
+    float: right
+    border: 1px solid #E0E0E0                                       
+    li
+        font-size: 11px
+        line-height: normal
+        letter-spacing: normal
+        display: inline-block
+        vertical-align: top
+        background: #EEEEEE
+        +g(#FDFDFD, #C5C5C5) 
+        a
+            display: block
+            height: 24px
+            line-height: 24px
+            text-decoration: none
+            font-size: 11px
+            line-height: 24px
+            text-align: center
+            padding: 0 5px
+            border-left: 1px solid #B0B0B0
+            width: 11px
+            color: #666
+            vertical-align: middle
+            &:hover
+                color: #0044CC
+        &:first-child
+            a
+                border-left: none     
+        &.prev, &.next
+            a
+                width: auto
+                font-weight: bold     
