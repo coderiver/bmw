@@ -337,3 +337,18 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 .copyrights__col p { font-size: 11px; line-height: 12px; margin-bottom: 10px; }
 
 .copyrights__block { margin-bottom: 40px; }
+
+.sitemap .h2 { font-size: 17px; line-height: 21px; font-weight: normal; margin-bottom: 40px; }
+
+.sitemap__topper { margin: 44px 0 0 0; }
+
+.sitemap__item { *zoom: 1; padding-top: 15px; margin-bottom: 15px; padding-left: 20px; border-top: 1px solid #999999; }
+.sitemap__item:after { content: " "; display: table; clear: both; }
+.sitemap__item a { display: inline-block; font-size: 11px; line-height: 12px; color: #4c4c4c; text-decoration: none; }
+.sitemap__item a:hover { color: #003399; }
+.sitemap__item a .h5 { font-weight: bold; color: black; }
+.sitemap__item:first-child { border-top: none; }
+
+.sitemap__col { width: 249px; float: left; margin-bottom: 20px; }
+.sitemap__col .h5 { font-size: 11px; line-height: 12px; }
+.sitemap__col .h5.h5_mod { margin-bottom: 20px; }
