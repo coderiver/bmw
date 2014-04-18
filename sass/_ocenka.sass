@@ -1,0 +1,50 @@
+.feedback
+	@extend .news
+	.h1
+		margin-bottom: 1.2em 
+	p
+		margin-bottom: 1em
+		font-size: 11px  
+.req
+	color: red 
+.form
+	font-size: 0
+	margin-bottom: 20px 
+	.form__title
+		border-bottom: 1px dotted #333
+		padding-bottom: 5px  
+		text-transform: uppercase
+		font-size: 12px 
+		margin-bottom: 10px 
+		width: 70% 
+	.form__submit
+		margin-top: 10px 
+		input
+			padding: 4px 10px
+			font-size: 14px  
+.field
+	display: inline-block
+	width: 30%
+	margin-right: 2%
+	vertical-align: top  
+	margin-bottom: 12px 
+	.field__label
+		display: block
+		padding-bottom: 6px 
+		font-size: 11px 
+	.field__input
+		box-shadow: inset 1px 2px 4px 0px rgba(0, 0, 0, 0.3)
+		border-color: #929292 #AFAFAF #AFAFAF #929292
+		border-width: 1px
+		border-style: solid  
+		width: 98%
+		padding: 3px 1%
+	select
+		display: block
+		width: 100% 
+	&.field_textarea
+		width: 100%
+		margin-right: 0
+		.field__input
+			height: 60px
+			font-family: Arial,sans-serif 
