@@ -352,3 +352,21 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 .sitemap__col { width: 249px; float: left; margin-bottom: 20px; }
 .sitemap__col .h5 { font-size: 11px; line-height: 12px; }
 .sitemap__col .h5.h5_mod { margin-bottom: 20px; }
+
+.catalog-wrap { padding: 40px 0 40px 292px; }
+
+.catalog__descr { font-size: 11px; line-height: 12px; margin-bottom: 10px; }
+
+.catalog__nav { *zoom: 1; width: 706px; margin-top: 25px; }
+.catalog__nav:after { content: " "; display: table; clear: both; }
+.catalog__nav li { float: left; margin: 20px 0 40px 4px; width: 115px; }
+.catalog__nav li .h1 { margin-bottom: 10px; }
+.catalog__nav li a { display: block; }
+
+.stocklist { border-spacing: 0; border-collapse: collapse; margin-bottom: 50px; font-size: 11px; line-height: 12px; color: #363636; }
+.stocklist th { border: 1px solid gray; background-color: #eeeeee; padding: 7px; }
+.stocklist tr.even td { background: #eeeeee; }
+.stocklist td { border: 1px solid gray; padding: 5px; vertical-align: middle; }
+.stocklist td a { color: #666666; }
+.stocklist td a:hover { color: #0044cc; }
+.stocklist td.stock-price, .stocklist td.stock-sale_event { text-align: right; white-space: nowrap; }
