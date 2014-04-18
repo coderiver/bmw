@@ -68,6 +68,7 @@ $(document).ready(function() {
     $(".js-sidebar-nav").hide();
     $(".js-sidebar").on('click', function(){
         $(".js-sidebar-nav").slideToggle('fast');
+        return false;
     });
 
     // sidebar nav accordeon
@@ -84,6 +85,7 @@ $(document).ready(function() {
             $(".js-droplist-sub").removeClass('is-open');
             $(this).addClass('is-open').next().show();
         };
+        return false;
         
     });
 
@@ -103,9 +105,21 @@ $(document).ready(function() {
         pager: "#adv-custom-pager",
         carouselFluid: true,
         allowWrap: true,
+        next: '.cyclenext',
+        prev: '.cycleprev',
         pagerTemplate: "<a href=#><img src='{{src}}' width=20 height=20></a>"
     });
-    $(".js-slider-teaser").cycle('goto', 1);
+    $( '.js-slider-teaser' ).on( 'cycle-before', function( event, opts ) {
+        // your event handler code here
+        // argument opts is the slideshow's option hash
+        //alert('a');
+        ne = opts.nextSlide;
+        ne = ne + 1;
+        $('#curslide').text(ne);
+        $('.slides').hide();
+        $('.slides'+ne).show()
+    });
+    //$(".js-slider-teaser").cycle('goto', 1);
 
     // tabs
     function tab() {
