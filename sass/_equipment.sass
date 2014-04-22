@@ -1,0 +1,114 @@
+// styles for equipment page
+
+.equipment-wrap
+    height: 634px
+    padding: 100px 31px 44px 240px
+    +box 
+    background: url(../img/equipment.jpg) 0 0 no-repeat
+.equipment
+    position: relative
+    height: 534px
+.equipment__nav
+    position: absolute
+    top: 0
+    left: -209px
+    width: 176px
+.equipment__menu
+    li
+        a
+            display: block
+            width: 156px
+            font-size: 11px
+            line-height: 13px
+            font-weight: bold
+            color: #737373
+            border-top: 1px solid #dadbdc
+            background: #F6F7F8
+            +g(#fff, #EDF0F1)
+            padding: 7px 10px 8px 10px
+            text-decoration: none
+            &:hover
+                color: rgb(29, 106,212)
+.equipment__teaser
+    margin-top: 3px                
+    background: #F6F7F8
+    +g(#fff, #EDF0F1)
+.equipment__teaser-text
+    position: relative
+    padding: 7px 11px 10px 11px
+    font-size: 11px
+    line-height: 13px
+    color: #363636
+    .link
+        margin-top: 3px
+.h2_equipment
+    color: #fff
+    font-size: 28px
+    margin-bottom: 15px
+.equipment__list
+    li
+        padding: 8px 13px 8px 0
+        a
+            position: relative
+            font-size: 13px
+            line-height: 15px
+            font-weight: bold
+            color: #fff
+            text-decoration: none
+            padding-left: 8px
+            &:before
+                content: ""
+                position: absolute
+                top: 3px
+                left: -1px
+                +arr(5, 10, #fff, r)
+            &:hover
+                color: #0033cc
+                &:before
+                    +arr(5, 10, #0033cc, r)
+.equipment__bot
+    position: absolute
+    bottom: 0px
+    left: 0px
+    +clr
+    li
+        float: left
+        &:hover
+            .equipment__preview
+                width: 150px
+            .equipment__details
+                display: block        
+.equipment__preview 
+    display: block
+    width: 118px
+    height: 43px
+    +box
+    padding: 7px 10px
+    font-size: 11px
+    line-height: 15px
+    font-weight: bold
+    color: #737373
+    text-decoration: none
+    background: #F6F7F8
+    +g(#fff, #EDF0F1)
+    &.blue
+        color: #fff
+        background: #3A7CC5 
+        +g(#4C89CD, #246BBB)
+.equipment__details
+    display: none
+    position: absolute
+    bottom: 0
+    width: 150px
+    +box
+    padding: 6px 11px 19px 9px
+    background-color: #f7f7f7
+    p
+        font-size: 11px
+        margin-bottom: 3px
+            
+        
+                      
+
+
+            
