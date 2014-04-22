@@ -231,7 +231,12 @@
 			</nav>
 		</div>
 		<div class="header__bottom">
-			<a href="#" class="droplist__header">BMW Иванов-Авто</a>
+			<div class="droplist">
+				<a href="#" class="droplist__header">BMW Иванов-Авто</a>
+			</div>
+			<div class="header__phone">
+				+7 (495) 980 70-80 (<a href="#">Заказать <span>обратный звонок</span></a>)
+			</div>
 		</div>
 		<div class="disrt">
 			<img src="img/distr.png" alt="">
@@ -243,10 +248,14 @@
 			
 			<!-- prev/next links -->
     		<div class="cycle-next"></div>
+    		<div class="cycle-prev"></div>
 			<!-- slider items -->
 			<div class="cycle-slideshow"
+			data-cycle-timeout="4000"
 			data-cycle-slides="> div"
 			data-cycle-next=".cycle-next"
+			data-cycle-prev=".cycle-prev"
+			data-cycle-pause-on-hover="true"
 			>
     			<div class="slider__item">
     				<img src="http://lorempixel.com/1024/291/animals" alt="">

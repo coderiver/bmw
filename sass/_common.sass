@@ -100,9 +100,24 @@ body
 	padding: 0 30px 
 	background: rgba(#898989, 0.9)
 .header__bottom
+	+clr
+	width: 1024px
 	height: 22px
 	+opacity(.9)
-
+	background: rgba(255,255,255,0.5)
+.header__phone
+	float: right
+	margin-right: 250px
+	font-size: 12px
+	line-height: 22px
+	font-weight: bold
+	a
+		text-decoration: none
+		color: #666
+		span
+			color: #0044CC
+		&:hover
+			color: #0044CC 		
 .mainmenu
 	display: inline-block
 	height: 27px

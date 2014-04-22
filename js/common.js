@@ -66,6 +66,7 @@ $(document).ready(function() {
     // sidebar nav dropdown
 
     $(".js-sidebar-nav").hide();
+    $(".js-sidebar-nav-open").show();
     $(".js-sidebar").on('click', function(){
         $(".js-sidebar-nav").slideToggle('fast');
         return false;

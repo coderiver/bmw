@@ -3,6 +3,7 @@
 .slider
 	position: relative
 	height: 291px
+	+nosel
 .slider_small
 	clear: both
 	height: 195px
@@ -23,6 +24,15 @@
 	z-index: 999
 	&:hover
 		+s(next_large-h)
+.cycle-prev 
+	position: absolute
+	bottom: 7px
+	right: 100px
+	+s(prev_large)
+	cursor: pointer
+	z-index: 999
+	&:hover
+		+s(prev_large-h)		
 .main-list
 	float: left
 	width: 298px
