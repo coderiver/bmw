@@ -132,6 +132,11 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 .gallery-slider__nav a:hover img { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 .gallery-slider__nav a img { width: 83px; height: 50px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
 
+.fancybox__inner { font-size: 0; }
+
+.fancybox { display: inline-block; }
+.fancybox img { width: 100px; height: 60px; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }

@@ -157,6 +157,26 @@ $(document).ready(function() {
             tab();
         };
     
+    // fancybox
+    
+    if ($(".fancybox").length) {
+        $(".fancybox").fancybox({
+            openEffect  : 'none',
+            closeEffect : 'none',
+            nextEffect : 'fade',
+            prevEffect : 'fade',
+            padding : 20,
+            arrows: true,
+            scrolling: 'no',
+            autoResize: true,
+            helpers: {
+              overlay: {
+                locked: false
+              }
+            }
+        });
+    }; 
+
 	$(document).click(function(event){
 		$(".showroom").removeClass('is-active');
 		$('.mainmenu__dropdown').hide();

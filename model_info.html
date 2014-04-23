@@ -6,9 +6,12 @@
 	<title>model_info</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
 	<script src="js/cycle.js"></script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -329,9 +332,16 @@
 				<div id="adv-custom-pager2" class="gallery-slider__nav"></div>
 			</div>
 
-			<div class="fancybox">
-				<div class="fancybox__title">Внешний вид</div>
-				<div class="fancybox__inner js-fancybox"></div>
+			<div class="fancybox-gallery">
+				<div class="fancybox__title">Вид изнутри</div>
+				<div class="fancybox__inner">
+					<a href="img/fancybox1.jpg" class="fancybox" rel="gallery1">
+						<img src="img/fancybox1.jpg" alt="">
+					</a>
+					<a href="img/fancybox2.jpg" class="fancybox" rel="gallery1">
+						<img src="img/fancybox2.jpg" alt="">
+					</a>
+				</div>
 			</div>
 
 			
