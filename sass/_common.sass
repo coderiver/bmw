@@ -283,4 +283,52 @@ body
 			text-decoration: none
 			&:hover
 				color: #fff
-				background: #003399 	
+				background: #003399
+				
+// gallery-slider
+
+.gallery
+	width: 500px
+	position: relative
+	margin-bottom: 28px
+	.cycle-next
+		top: 150px
+		right: 0px
+		+opacity(0)
+		+transition(opacity 200ms linear)
+	.cycle-prev
+		top: 150px
+		left: 0px
+		+opacity(0)
+		+transition(opacity 200ms linear)
+	&:hover
+		.cycle-next
+			+opacity(1)
+		.cycle-prev
+			+opacity(1)		
+.gallery__title, .fancybox__title
+	font-size: 16px
+	color: #999
+	margin: 10px 0 
+.gallery__slider
+	position: relative
+	width: 500px
+	+nosel
+	.cycle-slide
+		width: 500px
+		height: 300px
+.gallery-slider__nav
+	a
+		display: inline-block
+		font-size: 0
+		&.cycle-pager-active
+			img
+				+opacity(1)
+		&:hover
+			img
+				+opacity(1)		
+		img
+			width: 83px
+			height: 50px
+			+opacity(.8)				
+				 	

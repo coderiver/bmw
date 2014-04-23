@@ -120,7 +120,19 @@ $(document).ready(function() {
         $('.slides').hide();
         $('.slides'+ne).show()
     });
-    //$(".js-slider-teaser").cycle('goto', 1);
+    
+    // gallery slider initialize
+
+    $(".js-gallery-slider").cycle({
+        fx: "scrollHorz",
+        timeout: 0,
+        pager: "#adv-custom-pager2",
+        carouselFluid: true,
+        allowWrap: true,
+        next: '.cycle-next',
+        prev: '.cycle-prev',
+        pagerTemplate: "<a href=#><img src='{{src}}' width=83 height=50></a>"
+    });
 
     // tabs
     function tab() {
