@@ -67,8 +67,8 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 .mainmenu__link { display: block; margin: 13px 0px 0px 0px; color: white; text-decoration: none; font-size: 14px; }
 .mainmenu__link:hover { color: #000077; }
 .mainmenu__link.is-open { color: #000077; }
-.mainmenu__link.showroom { padding: 0 7px 0 8px; }
-.mainmenu__link.showroom.series { margin: 9px 0px 0px 0px; font-size: 17px; font-weight: bold; }
+.mainmenu__link.showroom { padding: 0 7px 0 5px; }
+.mainmenu__link.showroom.series { margin: 10px 0px 0px 0px; font-size: 17px; padding-left: 9px; font-weight: bold; }
 .mainmenu__link.is-active { background: white; color: #000077; }
 
 .mainmenu__dropdown { position: absolute; top: 100%; left: -1px; width: 198px; height: 337px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 8px; border: 1px solid #999999; border-top: none; background: white; z-index: 999; }
@@ -96,7 +96,7 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 .footer__menu ul li { float: left; margin-left: 6px; }
 
 .link { position: relative; display: inline-block; color: #4c4c4c; font-size: 11px; line-height: 1; text-decoration: none; }
-.link:before { content: ""; display: inline-block; margin: 0 6px 0 3px; width: 0px; height: 0px; border-style: solid; border-width: 3px 0 3px 3px; border-color: transparent transparent transparent #4c4c4c; }
+.link:before { content: ""; display: inline-block; margin: 0 6px 0 4px; width: 0px; height: 0px; border-style: solid; border-width: 3px 0 3px 3px; border-color: transparent transparent transparent #4c4c4c; }
 .link:hover { color: #003399; }
 .link:hover:before { width: 0px; height: 0px; border-style: solid; border-width: 3px 0 3px 3px; border-color: transparent transparent transparent #003399; }
 
@@ -174,7 +174,7 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 
 .main-list__text { float: left; width: 156px; margin-top: -2px; font-size: 11px; color: #4c4c4c; }
 
-.main-list__date { font-weight: bold; padding-left: 3px; text-decoration: none; }
+.main-list__date { font-weight: bold; padding-left: 5px; text-decoration: none; }
 
 .main-right { *zoom: 1; float: left; width: 427px; padding-top: 13px; border-left: 1px solid #999999; }
 .main-right:after { content: " "; display: table; clear: both; }
