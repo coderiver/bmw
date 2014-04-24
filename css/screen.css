@@ -80,7 +80,7 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 .submenu ul:after { content: " "; display: table; clear: both; }
 .submenu ul li { float: left; }
 .submenu ul li:first-child a { padding: 0 8px 0 0; }
-.submenu ul li a { display: inline-block; height: 22px; line-height: 22px; padding: 0 8px; font-size: 11px; text-decoration: none; color: white; }
+.submenu ul li a { display: inline-block; height: 22px; line-height: 22px; padding: 0 8px 0px 6px; font-size: 11px; text-decoration: none; color: white; }
 .submenu ul li a:hover { color: #000077; }
 
 .disrt { position: absolute; left: 791px; top: 0px; width: 187px; height: 95px; z-index: 899; }
