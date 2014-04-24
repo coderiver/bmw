@@ -2,11 +2,11 @@
 
 .model-details
     position: relative
-    padding-top: 53px 
-    margin-left: 266px
+    padding-top: 49px 
+    margin-left: 286px
     width: 662px
 .model-details__menu
-    margin-bottom: 16px
+    margin-bottom: 12px
     +clr
     li
         float: left
@@ -16,8 +16,8 @@
     +clr
 .model-details__print
     position: absolute
-    top: 5px
-    left: -47px
+    top: 0px
+    left: -44px
     +s(print)
     &:hover
         +s(print-h)            
@@ -27,12 +27,14 @@
     margin-left: 10px
     &:first-child
         margin-left: 0
+    &.last
+        padding-top: 3px    
 .drawing
     position: relative
 .drawing__btn
     position: absolute
-    top: 5px
-    left: 5px
+    top: 0px
+    left: 2px
     +s(lens)
     cursor: pointer
     z-index: 3
@@ -51,10 +53,13 @@
     left: 0
     z-index: 2
 .model-details__list
-    margin-bottom: 12px
+    margin-bottom: 8px
     font-size: 11px
-    line-height: 12px    
+    line-height: 12px
+    .h3
+        padding-bottom: 0    
 .technic-info
+    line-height: 1.4
     li
         +clr
         border-bottom: 1px solid #999

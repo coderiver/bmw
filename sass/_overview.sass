@@ -1,7 +1,7 @@
 // Normally overview page styles
 
 .teaser
-	margin-bottom: 25px
+	margin-bottom: 14px
 	font-size: 0
 .models
 	+clr
@@ -9,17 +9,25 @@
 .models__item
 	float: left
 	width: 154px
-	margin-left: 50px
+	margin-left: 39px
 	&:first-child
 		margin-left: 0
+	&.last
+		margin-left: 8px
+		.models__img
+			position: relative
+			left: 20px 	
 .models__img 
-	margin-bottom: 17px
+	margin-bottom: 21px
 	img
 		max-width: 100%
 .models__links
 	border-left: 1px solid #999
 	padding-left: 8px
 	min-height: 108px
+	p
+		line-height: 1
+		margin-bottom: 1px
 	a
 		display: inline-block
 		
