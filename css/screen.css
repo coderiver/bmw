@@ -186,7 +186,7 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 
 .rating p { font-size: 11px; font-weight: bold; }
 
-.rating-wrap { width: 220px; height: 75px; background: #cccccc; }
+.rating-wrap { width: 200px; height: 75px; background: #cccccc; }
 
 .likes { clear: both; padding-top: 3px; text-align: right; margin-bottom: 18px; }
 
