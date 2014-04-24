@@ -98,7 +98,7 @@ body
 .header__inner
 	height: 60px
 	padding: 0 30px 
-	background: rgba(#898989, 0.9)
+	background: #8b8b8b
 .header__bottom
 	+clr
 	width: 1024px
@@ -222,7 +222,7 @@ body
 	&:before
 		content: ""
 		display: inline-block
-		margin: 0 3px
+		margin: 0 6px 0 3px
 		+arr(3, 6, #4c4c4c, r)
 	&:hover
 		color: #003399	
@@ -240,7 +240,8 @@ body
 // select
 .select
 	position: relative
-	display: inline-block	
+	display: inline-block
+	+nosel	
 .select__text
 	position: relative
 	width: 173px

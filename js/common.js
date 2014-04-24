@@ -36,7 +36,7 @@ $(document).ready(function() {
             $(this).click(function(event){
                 if ($(this).hasClass("is-active")) {
                     $(this).removeClass("is-active");
-                    //select_list.hide();
+                    select_list.hide();
                 }
                 else {
                     $(".js-select").removeClass("is-active");
