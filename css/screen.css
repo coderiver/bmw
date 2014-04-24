@@ -111,7 +111,7 @@ body { min-width: 1024px; font-size: 12px; font-family: arial, helvetica, sans-s
 .select__text:before { content: ""; position: absolute; top: 0; right: 15px; width: 1px; height: 16px; background: #003399; }
 .select__text:after { content: ""; position: absolute; top: 5px; right: 3px; width: 0px; height: 0px; border-style: solid; border-width: 5px 5px 0 5px; border-color: #003399 transparent transparent transparent; }
 
-.select__dropdown { position: absolute; top: 17px; left: 0; right: 0; border: 1px solid #003399; padding: 10px 0; }
+.select__dropdown { position: absolute; top: 17px; left: 0; right: 0; border: 1px solid #003399; padding: 10px 0; z-index: 999; }
 .select__dropdown li a { display: block; padding: 0 5px; color: black; font-size: 11px; text-decoration: none; }
 .select__dropdown li a:hover { color: white; background: #003399; }
 
